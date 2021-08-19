@@ -1,11 +1,14 @@
-import ipaddress
-import math
-for ip in ipaddress.ip_network('192.168.100.0/23'):
-    print("your ip address is:", ip)
-val = input ("Tell me how do you wanna name this network: ")
-print (val)
-radice = 2**3
-print (radice)
+a = input("Digita qualcosa:")
 
+#print ("hai inserito una variabile di tipo: ", type(a))
 
-
+if type(a) == str:
+    print ("hai inserito una variabile di tipo STRINGA")
+elif type(a) == int:
+    print ("hai inserito una variabile di tipo INTEGER")
+elif type(a) == bool:
+    print ("hai inserito una variabile di tipo BOOLEAN")
+elif type(a) == float:
+    print ("hai inserito una variabile di tipo FLOAT")
+else:
+    print("non ho capito cosa hai inserito")
